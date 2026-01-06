@@ -1,5 +1,5 @@
 /* Write your T-SQL query statement below */
 select eu.unique_id, e.name
-from EmployeeUNI eu
-right join Employees e
-on eu.id=e.id
+from Employees e
+left join employeeUNI eu
+on e.id=eu.id
